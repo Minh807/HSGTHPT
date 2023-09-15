@@ -17,5 +17,11 @@ int main() {
 	// foreach : Range base for loop (C++11 above...);
 	for (int i : v) cout << i << " ";
 
+	// &i for changes.
+	for (int &i : v) {
+		i = 1000;
+		cout << i << " ";
+	}
+
 	return 0;
 }
